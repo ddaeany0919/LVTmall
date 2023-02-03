@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <RelativeLayout
+        android:id="@+id/fragment"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line">
+
+        <TextView
+            android:id="@+id/item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchImages"
+            android:hint="상품명"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="normal|italic" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item"
+            android:hint="가격"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="normal|italic" />
+
+        <TextView
+            android:id="@+id/explan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price"
+            android:hint="포인트"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="normal|italic" />
+
+        <ImageView
+            android:id="@+id/searchImages"
+            android:layout_width="match_parent"
+            android:layout_height="164dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="0dp" />
+        <!-- src 예시 이미지 -->
+
+    </RelativeLayout>
+</RelativeLayout>

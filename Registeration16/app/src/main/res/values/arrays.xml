@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bankList">
+        <item>카카오뱅크</item>
+        <item>농협</item>
+        <item>신협</item>
+    </string-array>
+
+    <string-array name="agency">
+        <item>LG U+</item>
+        <item>SKT</item>
+        <item>KT</item>
+        <item>알뜰폰 LG</item>
+        <item>알뜰폰 SKT</item>
+        <item>알뜰폰 KT</item>
+    </string-array>
+
+    <string-array name="term">
+        <item>1학기</item>
+        <item>2학기</item>
+        <item>여름학기</item>
+    </string-array>
+
+    <string-array name="area">
+        <item>교양 전공</item>
+        <item>교양</item>
+        <item>전공</item>
+    </string-array>
+</resources>

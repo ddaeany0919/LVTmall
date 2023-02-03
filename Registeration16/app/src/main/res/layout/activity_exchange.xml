@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.lvtmall.registeration16.Main.Userinfo.Exchange">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/category_itemline1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="PAY구매"
+
+                android:textColor="@color/gonggaBlue"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="보유중인 LVT="
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/usecoin"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:hint="(LVT)"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="15dp"
+            android:hint="수수료는 3.14LVT COIN이 사용됩니다."
+            android:textSize="15dp"
+            android:textColor="#AC30C7"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:drawableStart="@drawable/m2"
+            android:drawableLeft="@drawable/m2"
+            android:gravity="center"
+            android:text="환전할 LVT 금액"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/exchangePay"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:hint="(LVT)"
+            android:text=""
+            android:textSize="25dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="충전될 PAY 금액"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp"
+            android:id="@+id/givePay"
+            android:drawableStart="@drawable/m1"
+            android:drawableLeft="@drawable/m1">
+        </TextView>
+
+        <TextView
+            android:id="@+id/buyPay"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:hint="(원)"
+            android:text=""
+            android:textSize="25dp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="#1BBC9B"
+            android:text="환전될 금액 보기"
+            android:layout_gravity="center"
+            android:id="@+id/exchangePreveal" />
+
+        <Button
+            android:id="@+id/exchangeButton"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="8dp"
+            android:background="#1BBC9B"
+            android:text="환전 신청"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</LinearLayout>

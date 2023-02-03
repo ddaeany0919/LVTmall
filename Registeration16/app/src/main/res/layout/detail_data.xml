@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="228dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:padding="2dp"/>
+        <!--  android:scaleType="fitXY"/>는 화면 꽉차게 이미지뷰 보여주는 기능 -->
+
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:layout_centerHorizontal="true"
+                android:hint="가격"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="normal|italic" />
+
+            <TextView
+                android:id="@+id/item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/price"
+                android:layout_centerHorizontal="true"
+                android:hint="상품명"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="normal|italic"
+                android:layout_marginTop="3dp" />
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/detailimages1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/price"
+                android:layout_marginTop="70dp"
+
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:padding="2dp"/>
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/detailimages2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/detailimages1"
+                android:layout_marginTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:padding="2dp"/>
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/detailimages3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/detailimages2"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:padding="2dp"/>
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailimages3"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/Blue"
+            android:hint="구매하기"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/shoppingcartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_below="@+id/detailimages3"
+            android:layout_gravity="center|bottom"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toRightOf="@id/addButton"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:src="@drawable/cart"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff">
+
+        </ImageButton>
+
+    </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

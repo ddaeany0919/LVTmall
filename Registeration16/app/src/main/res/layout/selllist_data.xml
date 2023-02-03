@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <RelativeLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/line"
+       >
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitXY"
+            android:padding="2dp"/>
+        <TextView
+            android:id="@+id/itemText"
+            android:layout_below="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="상품명"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="normal|italic" />
+
+        <TextView
+            android:id="@+id/priceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemText"
+            android:hint="가격"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="normal|italic" />
+
+
+        <TextView
+            android:id="@+id/amountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/priceText"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="수량"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="2dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="normal|italic" />
+
+        <TextView
+            android:id="@+id/amountText3"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amountText"
+            android:layout_marginLeft="4dp"
+            android:text="(수량이 맞으시면 수량확인을 누르세요)"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="normal|italic" />
+
+        <TextView
+            android:id="@+id/totalText"
+            android:paddingTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginLeft="3dp"
+            android:layout_below="@+id/delivery_priceText"
+            android:hint="합계"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="normal|italic" />
+
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:paddingTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/totalText"
+            android:layout_marginLeft="4dp"
+      android:id="@+id/totalText3"
+            android:text="(상품구매금액 + 배송비 2,500 = 합계)"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="normal|italic" />
+        <TextView
+            android:layout_marginTop="2dp"
+            android:paddingTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amountText3"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/delivery_priceText"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="normal|italic" />
+        <!-- src 예시 이미지 -->
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="7dp"
+            android:background="@color/Blue"
+            android:hint="구매하기"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="24sp" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lvtmall.registeration">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing"
+            android:value="false" />
+        <activity android:name="com.lvtmall.registeration16.Main.Userinfo.findAdress"></activity>
+        <activity android:name="com.lvtmall.registeration16.Main.Userinfo.Changeinfo" />
+        <activity android:name="com.lvtmall.registeration16.Main.Search.Detail1" />
+        <activity android:name="com.lvtmall.registeration16.Main.Cart.BuyActivity" />
+        <activity android:name="com.lvtmall.registeration16.Main.Category.CategoryFolder.Category1" />
+        <activity android:name="com.lvtmall.registeration16.Main.Category.CategoryFolder.Category2" />
+        <activity android:name="com.lvtmall.registeration16.Main.Category.CategoryFolder.Category3" />
+        <activity android:name="com.lvtmall.registeration16.Main.Category.CategoryFolder.Category4" />
+        <activity android:name="com.lvtmall.registeration16.Main.Category.CategoryFolder.Category5" />
+        <activity android:name="com.lvtmall.registeration16.Main.Category.CategoryFolder.Category6" />
+        <activity android:name="com.lvtmall.registeration16.Main.Category.CategoryFolder.Category7" />
+        <activity android:name="com.lvtmall.registeration16.Main.Category.CategoryFolder.Category8" />
+        <activity android:name="com.lvtmall.registeration16.Main.Category.CategoryFolder.Category9" />
+        <activity android:name="com.lvtmall.registeration16.Main.Category.CategoryFolder.Category10" />
+        <activity android:name="com.lvtmall.registeration16.Main.Main.MainActivity" />
+        <activity android:name="com.lvtmall.registeration16.Main.Userinfo.Exchange" />
+        <activity android:name="com.lvtmall.registeration16.Main.Userinfo.PurchaseDetails" />
+        <activity android:name="com.lvtmall.registeration16.Register.RegisterActivity" />
+        <activity android:name="com.lvtmall.registeration16.Login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

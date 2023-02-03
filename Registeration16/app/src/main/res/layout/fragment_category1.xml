@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.lvtmall.registeration16.Main.Category.CategoryFolder.Category4"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="581dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/category_itemline"
+                android:gravity="left|center"
+                android:text="여행 상품"
+                android:id="@+id/category1"
+                android:textSize="17dp"
+                android:padding="5dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/category_itemline1"
+                android:gravity="left|center"
+                android:text="식품"
+                android:padding="5dp"
+                android:textSize="17dp"
+                android:id="@+id/category2"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/bottomline"
+                 android:gravity="left|center"
+                android:padding="5dp"
+                android:text="가전 제품"
+                android:textSize="17dp"
+                android:id="@+id/category3"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/category_itemline2"
+                android:drawableStart="@drawable/atomylogo"
+                android:text="atom"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:gravity="left|center"
+                android:padding="5dp"
+                android:id="@+id/category4"
+                android:tag="atom"
+                android:drawableLeft="@drawable/atomylogo" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/bottomline"
+                 android:gravity="left|center"
+                android:text="수소수"
+                android:textSize="17dp"
+                android:padding="5dp"
+                android:id="@+id/category5"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/category_itemline2"
+                 android:gravity="left|center"
+                android:text="기프티콘"
+                android:padding="5dp"
+                android:id="@+id/category6"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/bottomline"
+                 android:gravity="left|center"
+                android:text="꽃배달"
+                android:id="@+id/category7"
+                android:textSize="17dp"
+                android:padding="5dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/category_itemline2"
+                 android:gravity="left|center"
+                android:text="불교용품"
+                android:textSize="17dp"
+                android:id="@+id/category8"
+                android:padding="5dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/bottomline"
+                 android:gravity="left|center"
+                android:text="회사명9"
+                android:textSize="17dp"
+                android:padding="5dp"
+                android:id="@+id/category9"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/category_itemline2"
+                 android:gravity="left|center"
+                android:text="회사명10"
+                android:textSize="17dp"
+                android:padding="5dp"
+                android:id="@+id/category10"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+    </TableLayout>
+    </ScrollView>
+</LinearLayout>
